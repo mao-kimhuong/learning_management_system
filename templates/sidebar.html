@@ -10,7 +10,7 @@
 				</div>
 			</div>
 			<a href="/">
-				<img src="{% static 'img/brand.svg' %}" width="210px" alt="SkyLearn">
+				<img src="{% static 'img/s3.png' %}" height="100px" alt="SETEC">
 			</a>
 			<p class="mt-2 small">
 				<mark class="bg-secondary text-light" style="border-radius: 2px; padding: 2px 5px;">
@@ -121,7 +121,7 @@
 	<footer class="card-footer mt-5 pt-3 pb-5 px-2">
 		<div class="col-12">
 
-			<form action="{% url 'set_language' %}" method="post" id="lang-form">{% csrf_token %}
+			<!-- <form action="{% url 'set_language' %}" method="post" id="lang-form">{% csrf_token %}
 				<input name="next" type="hidden" value="{{ redirect_to }}">
 				<select class="small" name="language" id="lang-select">
 					{% get_current_language as LANGUAGE_CODE %}
@@ -133,14 +133,14 @@
 						</option>
 					{% endfor %}
 				</select>
-			</form>
+			</form> -->
 
 			<p class="small m-0">
-				{% trans 'Read our' %} <a href="#"> {% trans 'Privacy' %} </a> {% trans 'and' %} <a href="#"> {% trans 'Terms of use.' %} </a>
-				<br />SkyLearn &copy; <script>document.write(new Date().getFullYear());</script>
+				<!-- {% trans 'Read our' %} <a href="#"> {% trans 'Privacy' %} </a> {% trans 'and' %} <a href="#"> {% trans 'Terms of use.' %} </a> -->
+				<br />Setec &copy; <script>document.write(new Date().getFullYear());</script>
 				<br />
 			</p>
-			<a href="https://github.com/SkyCascade/SkyLearn" class="btn btn-sm btn-dark mx-auto" target="_blank">
+			<a href="https://github.com/maokimhuong19000/learning_management_system.git" class="btn btn-sm btn-dark mx-auto" target="_blank">
 				{% trans '⭐️ Star This Project' %}
 			</a>
 		</div>
