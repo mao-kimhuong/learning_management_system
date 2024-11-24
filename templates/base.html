@@ -20,7 +20,23 @@
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.min.css' %}">
 
-    <!-- <script src="https://js.stripe.com/v3/"></script> -->
+    <style>
+        /* Add background image styling */
+        body {
+            background-image: url("{% static 'img/bg.jpg' %}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333; /* Optional text color for readability */
+        }
+
+        #main-content {
+            background-color: rgba(255, 255, 255, 0.9); /* Optional: White background for content area */
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+
     {% block header %}{% endblock %}
 </head>
 
